@@ -68,9 +68,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Helloworld.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helloworld.aspx.cs">
+      <DependentUpon>Helloworld.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Helloworld.aspx.designer.cs">
+      <DependentUpon>Helloworld.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
